@@ -1,0 +1,85 @@
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Polygon;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Shape;
+/**
+ * @copyright 한국기술교육대학교 컴퓨터공학부 객체지향설계및실습
+ * @version 2021년도 2학기
+ * @author 2019136072 손지민
+ */
+public class DrawCommand implements Command, Cloneable{
+	private static final int RADIUS = 40;
+	private Shape shape;
+	private final Pane pane;
+	private double x;
+	private double y;
+	private ShapeType currentShape;
+	
+	public DrawCommand(Pane pane) {
+		this.pane = pane;
+	}
+	public void setX(double x) {
+		this.x = x;
+	}
+	public void setY(double y) {
+		this.y = y;
+	}
+	public void setCurrentShape(ShapeType currentShape) {
+		this.currentShape = currentShape;
+	}
+	@Override
+	public void execute() {
+		switch(currentShape) {
+		case SQUARE:
+			shape = new Rectangle(x-RADIUS, y-RADIUS, RADIUS*2, RADIUS*2);
+			break;
+		case CIRCLE:
+			shape = new Circle(x,y, RADIUS);
+			break;
+		case TRIANGLE:
+			Polygon triangle = new Polygon();
+			final double radian = Math.PI / 180F;
+			triangle.getPoints().addAll(new Double[] {
+				x+RADIUS*Math.cos(30*radian),
+				y+RADIUS*Math.sin(30*radian),
+				x+RADIUS*Math.cos(150*radian),
+				y+RADIUS*Math.sin(150*radian),
+				x+RADIUS*Math.cos(270*radian),
+				y+RADIUS*Math.sin(270*radian)
+			});
+			shape = triangle;
+		}
+		shape.setStroke(Color.BLACK);
+		shape.setFill(null);
+		shape.setStrokeWidth(5d);
+		pane.getChildren().add(shape);
+	}
+
+	@Override
+	public void undo() {
+		pane.getChildren().remove(shape);
+	}
+	
+	@Override
+	public void redo() {
+		pane.getChildren().add(shape);
+	}
+
+	@Override
+	public Shape getShape() {
+		return shape;
+	}
+	
+	@Override
+	protected DrawCommand clone() {
+		try {
+			return (DrawCommand) super.clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+}

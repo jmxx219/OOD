@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LastHandBasedStrategy.java&apos; to &apos;hwk3_My-Strategy-MookJiBa/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;hwk3_Strategy-MookJiBa&apos;&#x0D;&#x0A;- Destination element: &apos;hwk3_My-Strategy-MookJiBa/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;LastHandBasedStrategy.java&apos;" description="Copy compilation unit" destination="=hwk3_My-Strategy-MookJiBa/src&lt;" element1="/src&lt;{LastHandBasedStrategy.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1632405125415" units="1" version="1.0"/>
+</session>

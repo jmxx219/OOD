@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;user&apos; in &apos;ChatRoom.updateUsers(...)&apos; to &apos;userID&apos;&#x0D;&#x0A;- Original project: &apos;Observer-ChatRoom-Lab&apos;&#x0D;&#x0A;- Original element: &apos;ChatRoom.updateUsers(ChatServer).user&apos;&#x0D;&#x0A;- Renamed element: &apos;user&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;user&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{ChatRoom.java[ChatRoom~updateUsers~QChatServer;@user!1620!1650!1627!1630!QString;!0!false" name="userID" references="true" stamp="1632990954414" version="1.0"/>
+</session>

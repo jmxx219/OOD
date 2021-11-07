@@ -1,0 +1,46 @@
+import javafx.scene.control.ColorPicker;
+import javafx.scene.layout.Pane;
+import javafx.scene.shape.Shape;
+/**
+ * @copyright 한국기술교육대학교 컴퓨터공학부 객체지향설계및실습
+ * @version 2021년도 2학기
+ * @author 2019136072 손지민
+ */
+public class ChangeColorCommand implements Command {
+	private final Pane pane;
+	private Shape shape;
+	public ChangeColorCommand(Pane pane) {
+		this.pane = pane;
+	}
+	
+	public void setShape(Shape shape) {
+		this.shape = shape;
+	}
+	@Override
+	public void execute() {
+		ColorPicker picker = new ColorPicker();
+		picker.setLayoutX(shape.getBoundsInLocal().getCenterX());
+		picker.setLayoutY(shape.getBoundsInLocal().getCenterY());
+		pane.getChildren().add(picker);
+		picker.setOnAction(e->{
+			shape.setFill(picker.getValue());
+			pane.getChildren().remove(picker);
+		});
+		
+		System.out.println("색 변경: "+ shape.getFill());
+		
+	}
+
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Shape getShape() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

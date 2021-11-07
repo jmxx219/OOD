@@ -1,0 +1,9 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_number_of_computers=17
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=21
+org.eclipse.jdt.ui.javadoc=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="typecomment_context" deleted\="false" description\="Comment for created types" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.typecomment" name\="typecomment">/**\r\n * @copyright \uD55C\uAD6D\uAE30\uC220\uAD50\uC721\uB300\uD559\uAD50 \uCEF4\uD4E8\uD130\uACF5\uD559\uBD80 \uAC1D\uCCB4\uC9C0\uD5A5\uC124\uACC4\uBC0F\uC2E4\uC2B5\r\n * @version 2021\uB144\uB3C4 2\uD559\uAE30\r\n * @author 2019136072 \uC190\uC9C0\uBBFC\r\n */</template></templates>
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

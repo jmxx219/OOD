@@ -1,0 +1,76 @@
+import java.util.Stack;
+
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Polygon;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Shape;
+/**
+ * @copyright 한국기술교육대학교 컴퓨터공학부 객체지향설계및실습
+ * @version 2021년도 2학기
+ * @author 2019136072 손지민
+ */
+public class DrawCommand implements Command {
+	private static final int RADIUS = 40;
+	private Shape shape;
+	private final Pane pane;
+	private double x;
+	private double y;
+	private ShapeType currentShape;
+	private Stack<Shape> undoShape = new Stack<>();
+	
+	public DrawCommand(ShapeType currentShape, Pane pane) {
+		this.currentShape = currentShape;
+		this.pane = pane;
+	}
+	public void setX(double x) {
+		this.x = x;
+	}
+	public void setY(double y) {
+		this.y = y;
+	}
+	@Override
+	public void execute() {
+		Shape shape = null;
+		switch(currentShape) {
+		case SQUARE:
+			shape = new Rectangle(x-RADIUS, y-RADIUS, RADIUS*2, RADIUS*2);
+			break;
+		case CIRCLE:
+			shape = new Circle(x,y, RADIUS);
+			break;
+		case TRIANGLE:
+			Polygon triangle = new Polygon();
+			final double radian = Math.PI / 180F;
+			triangle.getPoints().addAll(new Double[] {
+				x+RADIUS*Math.cos(30*radian),
+				y+RADIUS*Math.sin(30*radian),
+				x+RADIUS*Math.cos(150*radian),
+				y+RADIUS*Math.sin(150*radian),
+				x+RADIUS*Math.cos(270*radian),
+				y+RADIUS*Math.sin(270*radian)
+			});
+			shape = triangle;
+		}
+		shape.setStroke(Color.BLACK);
+		shape.setFill(null);
+		shape.setStrokeWidth(5d);
+		pane.getChildren().add(shape);
+		undoShape.push(shape);
+//		System.out.println("그리기:" + shape.toString());
+	}
+
+	@Override
+	public void undo() {
+		if(!undoShape.isEmpty())
+			pane.getChildren().remove(undoShape.pop());
+	}
+
+	@Override
+	public Shape getShape() {
+		return shape;
+	}
+
+}
