@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 /**
  * @copyright 한국기술교육대학교 컴퓨터공학부 객체지향개발론및실습
  * @version 2021년도 2학기
- * @author 김상진 
+ * @author 2019136072 손지민  
  * @file BlackJackTest.java 
  * 탬플릿 메소드 패턴
  * 블랙잭 게임에서 합계 계산과 승패 결과 판단 메소드 단위 테스트 프로그램 
@@ -28,7 +28,8 @@ class BlackJackTest {
 		assertEquals(userHand.getScore(),20);
 		assertFalse(userHand.isBlackJack());
 	}
-
+	
+	@Test
 	void computeScoretest02() {
 		ArrayList<Card> userCards = new ArrayList<>();
 		userCards.add(new Card(2,CardFace.SPADES));
@@ -43,23 +44,23 @@ class BlackJackTest {
 		assertFalse(userHand.isBlackJack());		
 	}
 	
+	@Test
 	void determineResultTest01() {
 		ArrayList<Card> userCards = new ArrayList<>();
 		userCards.add(new Card(2,CardFace.SPADES));
 		userCards.add(new Card(13,CardFace.SPADES));
 		userCards.add(new Card(12,CardFace.DIAMONDS));
 		BlackJackPlayerHand userHand = new BlackJackPlayerHand(userCards);
-		
 		ArrayList<Card> dealerCards = new ArrayList<>();
 		dealerCards.add(new Card(5,CardFace.SPADES));
 		dealerCards.add(new Card(10,CardFace.SPADES));
 		dealerCards.add(new Card(7,CardFace.SPADES));
 		BlackJackPlayerHand dealerHand = new BlackJackPlayerHand(dealerCards);
-		
 		assertEquals(BlackJackGameResult.DRAW, 
 				BlackJackPlayerHand.determineResult(userHand, dealerHand));		
 	}
 	
+	@Test
 	void determineResultTest02() {
 		ArrayList<Card> userCards = new ArrayList<>();
 		userCards.add(new Card(1,CardFace.SPADES));
@@ -75,6 +76,7 @@ class BlackJackTest {
 				BlackJackPlayerHand.determineResult(userHand, dealerHand));		
 	}
 	
+	@Test
 	void determineResultTest03() {
 		ArrayList<Card> userCards = new ArrayList<>();
 		userCards.add(new Card(5,CardFace.SPADES));
@@ -91,6 +93,7 @@ class BlackJackTest {
 				BlackJackPlayerHand.determineResult(userHand, dealerHand));		
 	}
 	
+	@Test
 	void determineResultTest04() {
 		ArrayList<Card> userCards = new ArrayList<>();
 		userCards.add(new Card(1,CardFace.SPADES));

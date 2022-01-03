@@ -16,6 +16,8 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\과제\Iterator-ListIterator.zip"/>
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\과제\Template-CardGame-PlayVersion-Lab.zip"/>
 			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\과제\Command-DrawShape-Lab03.zip"/>
 			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\과제\Command-DrawShape-Lab02.zip"/>
 			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\과제\Command-DrawShape-Lab01.zip"/>

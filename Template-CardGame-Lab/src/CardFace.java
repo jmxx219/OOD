@@ -4,7 +4,7 @@
  * 탬플릿 메소드 패턴
  * CardFace.java
  * 카드의 모양을 나타내는 열거형
- * @author 김상진 
+ * @author 2019136072 손지민  
  */
 public enum CardFace {
 	CLUBS, HEARTS, DIAMONDS, SPADES 

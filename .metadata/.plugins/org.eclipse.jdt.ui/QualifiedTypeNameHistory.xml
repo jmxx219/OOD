@@ -14,7 +14,7 @@
     <fullyQualifiedTypeName name="java.awt.Paint"/>
     <fullyQualifiedTypeName name="javafx.scene.shape.Shape"/>
     <fullyQualifiedTypeName name="DrawShapeApp.ShapeType"/>
-    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
     <fullyQualifiedTypeName name="javafx.scene.paint.Paint"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
 </qualifiedTypeNameHistroy>

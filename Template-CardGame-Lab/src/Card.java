@@ -6,7 +6,7 @@
  * 카드 한 장을 나타내는 클래스
  * 모양과 숫자
  * 0이면 조커
- * @author 김상진 
+ * @author 2019136072 손지민  
  */
 public record Card(int number, CardFace face) {
 	public Card{

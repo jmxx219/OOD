@@ -9,7 +9,7 @@ import java.util.Iterator;
  * 반복자 패턴
  * 배열 기반 비정렬 범용 리스트
  * 구현 문제점 1. Object 배열을 이용하여 구현할 수 밖에 없음
- * 구현 문제점 2. T가 수정 가능한 객체일  반환 받은 것을 수정하면 리스트에도 영향을 줌
+ * 구현 문제점 2. T가 수정 가능한 객체일 때 반환 받은 것을 수정하면 리스트에도 영향을 줌
  * >> 이 문제를 해결하기 위해 clone을 사용하기 힘듦 
  */
 public class UnsortedArrayList<T> implements Iterable<T> {

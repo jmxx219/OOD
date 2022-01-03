@@ -8,8 +8,17 @@
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
-			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Template-Java.zip"/>
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Lab10-Java.zip"/>
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-MVC-Java.zip"/>
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Proxy-Java.zip"/>
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Lab09-Door-Java.zip"/>
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Lab09-Java.zip"/>
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-State-Java.zip"/>
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Lab08-Java.zip"/>
 			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Lab07-Java.zip"/>
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Composite-Java.zip"/>
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Iterator-Java.zip"/>
+			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Template-Java.zip"/>
 			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Adapter-Java.zip"/>
 			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Lab06-Java.zip"/>
 			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\실습자료\2021-OOD-Command-Java.zip"/>
@@ -19,12 +28,6 @@
 			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\강의자료\실습자료\2021-OOD-Lab04-Java.zip"/>
 			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\강의자료\실습자료\2021-OOD-FactoryMethod-Java.zip"/>
 			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\강의자료\실습자료\2021-OOD-Decorator-Java.zip"/>
-			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\강의자료\실습자료\2021-OOD-Observer-Java.zip"/>
-			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\강의자료\실습자료\2021-OOD-Lab03-Java.zip"/>
-			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\강의자료\실습자료\2021-OOD-Strategy-Java.zip"/>
-			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\강의자료\실습자료\2021-OOD-Lab02-Java.zip"/>
-			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\강의자료\실습자료\2021-OOD-Lab01-Java.zip"/>
-			<item value="C:\Users\thswl\OneDrive\바탕 화면\2021-2\객체지향개발론및실습\JavaFX-TEST.zip"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">
